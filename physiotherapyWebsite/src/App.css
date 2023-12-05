@@ -1,0 +1,127 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#carouselExampleCaptions img {
+  max-height: 80vh;
+}
+nav {
+  font-family: "Montserrat", sans-serif;
+}
+
+#iletisim {
+  font-size: 30px;
+}
+
+.nav-item:hover {
+  border-bottom: 2px solid black;
+}
+body {
+  /* background-color: #f8eadc; */
+  background-color: #f0f0f0;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+.logo {
+  margin-right: 50px;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+  .list {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .navbar label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+#hizmetlerimiz .item img {
+  width: 95%;
+  height: 100%;
+}
+
+#hizmetlerimiz .item {
+  position: relative;
+  width: 95%;
+  overflow: hidden;
+}
+
+#hizmetlerimiz .item .text {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  position: absolute;
+  backdrop-filter: blur(5px);
+}
+#hizmetlerimiz .item .text h3 {
+  margin-top: 60%;
+}
+
+#hizmetlerimiz .item:hover .text {
+  color: white;
+  transition: all ease 0.3s;
+  left: 0;
+}
+#hizmetlerimiz .item:hover img {
+  transition: all ease 0.3s;
+}
+
+@media screen and (max-width: 700px) {
+  #hizmetlerimiz {
+    display: block !important;
+  }
+}
